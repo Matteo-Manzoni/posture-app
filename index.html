@@ -4,88 +4,123 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Posture - check and fix your posture, privately</title>
-  <meta name="description" content="Posture screens your posture on your phone and builds a short daily routine to fix it. No account, no cloud, your photos never leave your device.">
+  <meta name="description" content="Posture screens how you stand using your phone, then builds a short daily routine to fix it. No account, no cloud, your photos never leave your device.">
+  <meta property="og:title" content="Posture - check and fix your posture, privately">
+  <meta property="og:description" content="Screen your posture on your phone, get a short daily routine, all on your device.">
+  <link rel="icon" href="appicon.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <a class="brand" href="/posture-app/"><span class="mark">P</span> Posture</a>
-    <div class="links">
-      <a href="#how">How it works</a>
-      <a href="#privacy">Privacy</a>
-      <a href="support.html">Support</a>
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="/posture-app/"><img src="appicon.png" alt=""> Posture</a>
+      <nav class="nav-links">
+        <a href="#how">How it works</a>
+        <a href="#privacy">Privacy</a>
+        <a href="support.html">Support</a>
+      </nav>
     </div>
-  </nav>
-
-  <header class="hero">
-    <h1>Check your posture.<br><span class="accent">Fix it in minutes a day.</span></h1>
-    <p class="sub">Posture screens how you stand using your phone's camera, then builds a short daily routine to work on what it finds. All on your device.</p>
-    <a class="cta soon" href="#">Coming soon to the App Store</a>
-    <span class="note">iPhone. One-time screening, then a few minutes a day.</span>
   </header>
 
-  <section class="block" id="how">
-    <div class="wrap">
-      <p class="kicker">How it works</p>
-      <h2>Screen, then practice</h2>
-      <div class="features">
-        <div class="feature">
-          <span class="ico">&#128247;</span>
-          <h3>1. Screen</h3>
-          <p>Stand in front of your phone. The camera estimates your posture from a few angles and shows the results with an honest confidence range.</p>
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <h1 class="reveal">Check your posture.<br><em>Fix it in minutes a day.</em></h1>
+          <p class="lead reveal" data-delay="1">Posture reads how you stand using your phone's camera, then builds a short daily routine around what it actually finds. All of it on your device.</p>
+          <div class="actions reveal" data-delay="2">
+            <span class="btn" aria-disabled="true">Coming to the App Store</span>
+            <a class="textlink" href="#how">See how it works</a>
+          </div>
+          <p class="fineprint reveal" data-delay="3">iPhone. One screening, then a few honest minutes a day.</p>
         </div>
-        <div class="feature">
-          <span class="ico">&#129488;</span>
-          <h3>2. Get a plan</h3>
-          <p>Your screening turns into a short corrective routine that targets what it actually found, not a generic list.</p>
-        </div>
-        <div class="feature">
-          <span class="ico">&#128200;</span>
-          <h3>3. Track change</h3>
-          <p>Re-screen over time and watch the trend. Honest minimum-change bands mean noise is never shown as progress.</p>
+        <div class="hero-art reveal" data-delay="1">
+          <img src="appicon.png" alt="Posture app icon" width="300" height="300">
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="block alt" id="privacy">
-    <div class="wrap">
-      <p class="kicker">Privacy</p>
-      <p class="proof">Turn on airplane mode. <span>The scan still works.</span></p>
-      <p style="margin-top:1rem; color:var(--muted); max-width:560px;">There is no account, no sign-up, and no server that receives your data. The camera image is analyzed on your phone and is never saved or uploaded. The app stores only the resulting posture estimates, on your device.</p>
-      <div class="features" style="margin-top:2rem;">
-        <div class="feature">
-          <h3>No account</h3>
-          <p>No email, no sign-up, no profile to create. Open the app and go.</p>
+    <section id="how">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>Screen, then practice.</h2>
+          <p>No guesswork and no generic plan. The app works from your own posture, not an average one.</p>
         </div>
-        <div class="feature">
-          <h3>Photos never leave</h3>
-          <p>The scan image is processed in memory and discarded. It is never written to disk or sent anywhere.</p>
-        </div>
-        <div class="feature">
-          <h3>No tracking</h3>
-          <p>No analytics SDKs, no third-party code, no data collection of any kind.</p>
+        <div class="steps">
+          <div class="step reveal">
+            <span class="num">01</span>
+            <div>
+              <h3>Screen</h3>
+              <p>Stand in front of your phone. The camera estimates your posture from a few angles and shows the result with an honest confidence range.</p>
+            </div>
+          </div>
+          <div class="step reveal" data-delay="1">
+            <span class="num">02</span>
+            <div>
+              <h3>Get a plan</h3>
+              <p>Your screening becomes a short corrective routine aimed at what it found, not a one-size-fits-all checklist.</p>
+            </div>
+          </div>
+          <div class="step reveal" data-delay="2">
+            <span class="num">03</span>
+            <div>
+              <h3>Track change</h3>
+              <p>Re-screen over time and watch the trend. Honest minimum-change bands mean noise is never dressed up as progress.</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="block">
-    <div class="wrap">
-      <p class="kicker">Honest by design</p>
-      <h2>A real free tier, not a paywall</h2>
-      <p style="color:var(--muted); max-width:560px;">You can screen your posture and follow a corrective routine without paying. Posture Premium adds more, but the core is genuinely usable for free. No dark patterns, no fake countdowns, no forced trial.</p>
-    </div>
-  </section>
+    <section class="privacy" id="privacy">
+      <div class="wrap">
+        <p class="statement reveal">Turn on airplane mode. <b>The scan still works.</b></p>
+        <p class="blurb reveal" data-delay="1">There is no account, no sign-up, and no server that receives your data. The camera image is analyzed on your phone, then discarded. The app keeps only the posture estimates, on your device.</p>
+        <div class="points">
+          <div class="point reveal">
+            <h4>No account</h4>
+            <p>No email, no sign-up, no profile. Open the app and start.</p>
+          </div>
+          <div class="point reveal" data-delay="1">
+            <h4>Photos never leave</h4>
+            <p>The scan image is processed in memory and never written to disk or sent anywhere.</p>
+          </div>
+          <div class="point reveal" data-delay="2">
+            <h4>No tracking</h4>
+            <p>No analytics, no third-party code, no data collection of any kind.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="free">
+      <div class="wrap reveal">
+        <h2>A real free tier, not a paywall.</h2>
+        <p>You can screen your posture and follow a corrective routine without paying a thing. Posture Premium adds more, but the core is genuinely useful for free. No dark patterns, no fake countdowns, no forced trial.</p>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <div class="links">
-      <a href="/posture-app/">Home</a>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Service</a>
-      <a href="support.html">Support</a>
+    <div class="wrap">
+      <div class="flinks">
+        <a href="/posture-app/">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html">Support</a>
+      </div>
+      <p class="legal">&copy; 2026 Matteo Manzoni. Posture is a general-wellness app, not a medical service.</p>
     </div>
-    <p class="small">&copy; 2026 Matteo Manzoni. Posture is a general-wellness app and is not a medical service.</p>
   </footer>
+
+  <script>
+    // Staggered scroll-in reveals; respects reduced-motion via CSS.
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      }
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
 </body>
 </html>
