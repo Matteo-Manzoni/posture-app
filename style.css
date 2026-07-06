@@ -112,6 +112,14 @@ section { padding-block: var(--space-4xl); }
 .step h3 { font-size: 1.3rem; margin-bottom: var(--space-xs); }
 .step p { color: var(--muted); max-width: 34ch; }
 
+/* App gallery - real screenshots, story order */
+.gallery { display: grid; gap: clamp(1.75rem, 5vw, 3rem); justify-items: center; grid-template-columns: 1fr; }
+@media (min-width: 720px) { .gallery { grid-template-columns: repeat(3, 1fr); align-items: start; } }
+.gallery .shot {
+  width: 100%; max-width: 280px; height: auto; border-radius: 22px; display: block;
+  box-shadow: 0 24px 60px -28px oklch(0.40 0.10 210 / 0.5), 0 6px 16px -10px oklch(0.30 0.08 210 / 0.35);
+}
+
 /* Privacy - full statement, dark to echo the icon */
 .privacy { background: var(--dark); color: oklch(0.92 0.02 198); border-radius: 0; }
 .privacy .wrap { padding-block: var(--space-4xl); }
