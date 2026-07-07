@@ -7,6 +7,9 @@
   <meta name="description" content="Posture screens how you stand using your phone, then builds a short daily routine around what it finds. No account, no cloud, your photos never leave your device.">
   <meta property="og:title" content="Posture - check and improve your posture, privately">
   <meta property="og:description" content="Screen your posture on your phone, get a short daily routine, all on your device.">
+  <meta property="og:image" content="https://matteo-manzoni.github.io/posture-app/img/og-card.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="appicon.png">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -49,6 +52,7 @@
         </div>
         <div class="steps">
           <div class="step reveal">
+            <img class="step-icon" src="img/step-screen.png" alt="" width="72" height="72" loading="lazy">
             <span class="num">01</span>
             <div>
               <h3>Screen</h3>
@@ -56,6 +60,7 @@
             </div>
           </div>
           <div class="step reveal" data-delay="1">
+            <img class="step-icon" src="img/step-plan.png" alt="" width="72" height="72" loading="lazy">
             <span class="num">02</span>
             <div>
               <h3>Get a plan</h3>
@@ -63,6 +68,7 @@
             </div>
           </div>
           <div class="step reveal" data-delay="2">
+            <img class="step-icon" src="img/step-track.png" alt="" width="72" height="72" loading="lazy">
             <span class="num">03</span>
             <div>
               <h3>Track change</h3>
@@ -89,8 +95,13 @@
 
     <section class="privacy" id="privacy">
       <div class="wrap">
-        <p class="statement reveal">Turn on airplane mode. <b>The scan still works.</b></p>
-        <p class="blurb reveal" data-delay="1">There is no account, no sign-up, and no server that receives your data. The camera image is analyzed on your phone, then discarded. The app keeps only the posture estimates, on your device.</p>
+        <div class="privacy-head">
+          <div>
+            <p class="statement reveal">Turn on airplane mode. <b>The scan still works.</b></p>
+            <p class="blurb reveal" data-delay="1">There is no account, no sign-up, and no server that receives your data. The camera image is analyzed on your phone, then discarded. The app keeps only the posture estimates, on your device.</p>
+          </div>
+          <img class="privacy-art reveal" data-delay="1" src="img/privacy-visual.png" alt="Phone running the scan in airplane mode, processing on device" width="300" height="300" loading="lazy">
+        </div>
         <div class="points">
           <div class="point reveal">
             <h4>No account</h4>
@@ -110,8 +121,10 @@
 
     <section class="free">
       <div class="wrap reveal">
+        <img class="free-icon" src="appicon.png" alt="" width="72" height="72">
         <h2>A real free tier, not a paywall.</h2>
-        <p>You can screen your posture and follow a corrective routine without paying a thing. Posture Premium adds more, but the core is genuinely useful for free. No dark patterns, no fake countdowns, no forced trial.</p>
+        <p>Screen your posture and follow a corrective routine without paying a thing. Premium adds more, but the core is genuinely useful for free. No dark patterns, no fake countdowns, no forced trial.</p>
+        <span class="btn" aria-disabled="true">Coming to the App Store</span>
       </div>
     </section>
   </main>

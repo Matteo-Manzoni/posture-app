@@ -108,7 +108,8 @@ section { padding-block: var(--space-4xl); }
 @media (min-width: 720px) { .steps { grid-template-columns: repeat(3, 1fr); gap: clamp(2rem, 4vw, 3rem); } }
 .step { display: grid; grid-template-columns: auto 1fr; gap: var(--space-lg); align-items: start; }
 @media (min-width: 720px) { .step { grid-template-columns: 1fr; gap: var(--space-md); } }
-.step .num { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: clamp(2.2rem, 5vw, 3.2rem); color: var(--teal); line-height: 1; }
+.step-icon { width: 68px; height: 68px; border-radius: 16px; display: block; margin-bottom: var(--space-sm); box-shadow: 0 12px 28px -16px oklch(0.40 0.10 210 / 0.5); }
+.step .num { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: clamp(1.4rem, 3vw, 1.8rem); color: var(--teal); line-height: 1; }
 .step h3 { font-size: 1.3rem; margin-bottom: var(--space-xs); }
 .step p { color: var(--muted); max-width: 34ch; }
 
@@ -126,16 +127,22 @@ section { padding-block: var(--space-4xl); }
 .privacy .statement { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: clamp(1.8rem, 5vw, 3.2rem); line-height: 1.12; letter-spacing: -0.02em; color: oklch(0.97 0.01 198); max-width: 18ch; }
 .privacy .statement b { color: var(--teal); font-weight: 700; }
 .privacy .blurb { margin-top: var(--space-lg); color: oklch(0.82 0.02 198); max-width: 52ch; font-size: 1.1rem; }
+.privacy-head { display: grid; grid-template-columns: 1fr; gap: var(--space-2xl); align-items: center; }
+@media (min-width: 820px) { .privacy-head { grid-template-columns: 1.6fr 1fr; } }
+.privacy-art { width: 100%; max-width: 320px; height: auto; border-radius: 24px; justify-self: center; box-shadow: 0 24px 60px -30px oklch(0 0 0 / 0.5); }
 .privacy .points { margin-top: var(--space-3xl); display: grid; gap: var(--space-xl); }
 @media (min-width: 720px) { .privacy .points { grid-template-columns: repeat(3, 1fr); gap: var(--space-2xl); } }
 .privacy .point { border-top: 1px solid oklch(0.45 0.04 210); padding-top: var(--space-md); }
 .privacy .point h4 { font-family: "Bricolage Grotesque", sans-serif; color: oklch(0.98 0.01 198); font-size: 1.15rem; font-weight: 600; margin-bottom: var(--space-xs); }
 .privacy .point p { color: oklch(0.80 0.02 198); font-size: 0.98rem; }
 
-/* Free tier - asymmetric statement */
-.free .wrap { display: grid; grid-template-columns: 1fr; gap: var(--space-lg); max-width: 760px; }
-.free h2 { font-size: clamp(1.8rem, 4.5vw, 2.8rem); max-width: 16ch; }
-.free p { color: var(--muted); font-size: 1.15rem; max-width: var(--measure); }
+/* Free tier - closing band, centered, tinted so it is not a blank white box */
+.free { background: var(--teal-soft); border-top: 1px solid var(--line); padding-block: clamp(3.5rem, 8vw, 6rem); }
+.free .wrap { max-width: 620px; margin-inline: auto; display: flex; flex-direction: column; align-items: center; text-align: center; gap: var(--space-lg); }
+.free-icon { width: 72px; height: 72px; border-radius: 18px; box-shadow: 0 16px 36px -20px oklch(0.40 0.10 210 / 0.5); }
+.free h2 { font-size: clamp(1.8rem, 4.5vw, 2.6rem); max-width: 18ch; }
+.free p { color: var(--body); font-size: 1.1rem; max-width: 52ch; }
+.free .btn { margin-top: var(--space-xs); }
 
 /* ---------- Doc pages (privacy / terms / support) ---------- */
 .doc { padding-block: clamp(2.5rem, 6vw, 4.5rem); }
