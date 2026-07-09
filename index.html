@@ -32,11 +32,12 @@
         <div>
           <h1 class="reveal">Better posture<br><em>in weeks.</em></h1>
           <p class="lead reveal" data-delay="1">Scan how you stand with your phone's camera, get a short daily routine built from what it actually finds, and stretch five minutes a day. All of it on your device.</p>
-          <div class="actions reveal" data-delay="2">
-            <span class="btn" aria-disabled="true">Coming to the App Store</span>
-            <a class="textlink" href="#how">See how it works</a>
-          </div>
-          <p class="fineprint reveal" data-delay="3">iPhone. One screening, then a few honest minutes a day.</p>
+          <form class="notify reveal" data-delay="2" action="https://buttondown.com/api/emails/embed-subscribe/matteomanzoni" method="POST">
+            <input type="email" name="email" required autocomplete="email" placeholder="you@email.com" aria-label="Your email">
+            <input type="hidden" name="embed" value="1">
+            <button type="submit" class="btn">Notify me at launch</button>
+          </form>
+          <p class="fineprint reveal" data-delay="3">One email the day it launches. No spam, no sharing. <a href="#how">See how it works</a></p>
         </div>
         <div class="hero-art reveal" data-delay="1">
           <img src="img/hero-figure.png" alt="Side-view posture figure with alignment line and joint markers" width="335" height="600">
@@ -124,7 +125,11 @@
         <img class="free-icon" src="appicon.png" alt="" width="72" height="72">
         <h2>A real free tier, not a paywall.</h2>
         <p>Screen your posture and follow a corrective routine without paying a thing. Premium adds more, but the core is genuinely useful for free. No dark patterns, no fake countdowns, no forced trial.</p>
-        <span class="btn" aria-disabled="true">Coming to the App Store</span>
+        <form class="notify" action="https://buttondown.com/api/emails/embed-subscribe/matteomanzoni" method="POST">
+          <input type="email" name="email" required autocomplete="email" placeholder="you@email.com" aria-label="Your email">
+          <input type="hidden" name="embed" value="1">
+          <button type="submit" class="btn">Notify me at launch</button>
+        </form>
       </div>
     </section>
   </main>
